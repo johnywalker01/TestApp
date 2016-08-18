@@ -1,6 +1,16 @@
 /* 
     Created on : 18 Aug, 2016, 4:11:53 PM
 */
+h2{
+  text-align: center;
+}
+.mz-borderOn{
+  border: 1px solid #999;
+}
+.mz-div1{
+  float: left;
+  width: auto;
+}
 .mz-sty1{
   font-style: italic;
   font-size: 18px;

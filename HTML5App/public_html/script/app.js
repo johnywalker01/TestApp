@@ -2,7 +2,7 @@
 
 var myApp = angular.module('myApp',[]);
 
-myApp.controller("myCtrl", function ($scope) {
-  $scope.userName = "";
+myApp.controller("myController", function () {
+  this.userName = "";
 });
 

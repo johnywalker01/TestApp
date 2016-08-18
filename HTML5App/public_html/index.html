@@ -13,9 +13,9 @@
   </head>
   <body ng-app="myApp">
     <h2>Angular JS Test App</h2>
-    <div ng-controller="myCtrl">
-      <input type="text" placeholder="Enter you name" ng-model="userName"/>
-      <p>Your Name : <label class="mz-sty1">{{userName}}</label></p>
+    <div class="mz-div1 mz-borderOn" ng-controller="myController as myCtrl">
+      <input type="text" placeholder="Enter you name" ng-model="myCtrl.userName"/>
+      <div class="mz-borderOn">Your Name : <span><label class="mz-sty1">{{myCtrl.userName}}</label></span></div>
     </div>
   </body>
 </html>
