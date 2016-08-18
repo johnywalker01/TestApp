@@ -13,9 +13,12 @@
   </head>
   <body ng-app="myApp">
     <h2>Angular JS Test App</h2>
-    <div class="mz-div1 mz-borderOn" ng-controller="myController as myCtrl">
+    <div class="mz-div1" ng-controller="myController as myCtrl">
       <input type="text" placeholder="Enter you name" ng-model="myCtrl.userName"/>
-      <div class="mz-borderOn">Your Name : <span><label class="mz-sty1">{{myCtrl.userName}}</label></span></div>
+      <div>Your Name :
+        <label class="mz-sty1">{{myCtrl.userName|reverse}}</label>
+        <label class="mz-sty2">{{myCtrl.userName|alternateUppercase}}</label>
+      </div>
     </div>
   </body>
 </html>
