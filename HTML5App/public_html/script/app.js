@@ -5,9 +5,9 @@ var myApp = angular.module('myApp', []);
 myApp.controller("myController", function ($filter) {
   this.userName = "";
   this.text = "";
+  this.resultText = "";
   this.camelCase = function(){
-    this.text = $filter('camelCase')(this.text);
-    alert(this.text);
+    this.resultText = $filter('camelCase')(this.text);
   };
 });
 

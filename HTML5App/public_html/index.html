@@ -20,8 +20,9 @@
         <label class="mz-sty2">{{myCtrl.userName|alternateUppercase}}</label>
       </div>
       <div>Enter your word :
-        <textarea ng-model="myCtrl.text"></textarea>
+        <textarea class="mz-txtAreaStyleA" ng-model="myCtrl.text"></textarea>
         <button ng-click="myCtrl.camelCase()">Convert To CamelCase</button>
+        <textarea class="mz-txtAreaStyleA" ng-disabled="true" ng-model="myCtrl.resultText"></textarea>
       </div>
     </div>
   </body>
