@@ -8,21 +8,20 @@
     <!--including angularjs lib files (via CDN)-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
     <script src="script/app.js" type="text/javascript"></script>
-
+    <link href="style/generic.css" rel="stylesheet" type="text/css"/>
     <link href="style/style1.css" rel="stylesheet" type="text/css"/>
   </head>
   <body ng-app="myApp">
     <h2>Angular JS Test App</h2>
-    <div class="mz-div1" ng-controller="myController as myCtrl">
-      <input type="text" placeholder="Enter you name" ng-model="myCtrl.userName"/>
-      <div>Your Name :
-        <label class="mz-sty1">{{myCtrl.userName|reverse}}</label>
-        <label class="mz-sty2">{{myCtrl.userName|alternateUppercase}}</label>
-      </div>
-      <div>Enter your word :
-        <textarea class="mz-txtAreaStyleA" ng-model="myCtrl.text"></textarea>
-        <button ng-click="myCtrl.camelCase()">Convert To CamelCase</button>
-        <textarea class="mz-txtAreaStyleA" ng-disabled="true" ng-model="myCtrl.resultText"></textarea>
+    <div class="row" ng-controller="myController as myCtrl">
+      <div class="col-6 mz-centerDiv borderOn">
+        <input class="mz-roundBoder" type="text" placeholder="Please enter a text" ng-model="myCtrl.string"/>
+        <div class="col-12 mz-centerAlign">
+          <button ng-click="myCtrl.convertToReverse()">Convert To Reverse</button>
+          <button ng-click="myCtrl.convertToAlternateUppercase()">Convert To Alternate Uppercase</button>
+          <button ng-click="myCtrl.convertToCamelCase()">Convert To Camelcase</button>
+        </div>
+        <label class="mz-displaylabel" ng-bind="myCtrl.resultString"></label>
       </div>
     </div>
   </body>

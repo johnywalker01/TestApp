@@ -3,11 +3,16 @@
 var myApp = angular.module('myApp', []);
 
 myApp.controller("myController", function ($filter) {
-  this.userName = "";
-  this.text = "";
-  this.resultText = "";
-  this.camelCase = function(){
-    this.resultText = $filter('camelCase')(this.text);
+  this.string = "";
+  this.resultString = "";
+  this.convertToReverse = function(){
+    this.resultString = $filter('reverse')(this.string);
+  };
+  this.convertToAlternateUppercase = function(){
+    this.resultString = $filter('alternateUppercase')(this.string);
+  };
+  this.convertToCamelCase = function(){
+    this.resultString = $filter('camelCase')(this.string);
   };
 });
 

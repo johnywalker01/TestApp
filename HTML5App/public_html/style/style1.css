@@ -4,24 +4,25 @@
 h2{
   text-align: center;
 }
-.mz-borderOn{
-  border: 1px solid #999;
+.mz-centerDiv{
+  left: 25%;
 }
-.mz-div1{
-  float: left;
-  width: auto;
+.mz-centerDiv input{
+  width: 100%;
+  text-align: center;
+  border-style: solid;
+  border-radius: 4px;
 }
-.mz-sty1{
+.mz-centerAlign{
+  text-align: center;
+}
+.mz-displaylabel{
+  width: 100%;
+  text-align: center;
+  border: 1px solid #fea;
+  border-radius: 3px;
   font-style: italic;
   font-size: 18px;
   font-weight: bolder;
-}
-.mz-sty2{
-  font-size: 20px;
-  font-weight: bolder;
-}
-.mz-txtAreaStyleA{
-  width: 200px;
-  height: 80px;
 }
 
