@@ -15,13 +15,15 @@
     <h2>Angular JS Test App</h2>
     <div class="row" ng-controller="myController as myCtrl">
       <div class="col-6 mz-centerDiv borderOn">
-        <input class="mz-roundBoder" type="text" placeholder="Please enter a text" ng-model="myCtrl.string"/>
+        <input class="mz-inputS1" type="text" placeholder="Please enter a text" ng-model="myCtrl.string"/>
         <div class="col-12 mz-centerAlign">
           <button ng-click="myCtrl.convertToReverse()">Convert To Reverse</button>
           <button ng-click="myCtrl.convertToAlternateUppercase()">Convert To Alternate Uppercase</button>
           <button ng-click="myCtrl.convertToCamelCase()">Convert To Camelcase</button>
         </div>
-        <label class="mz-displaylabel" ng-bind="myCtrl.resultString"></label>
+        <div class="col-12 mz-centerAlign">
+          <label class="mz-displaylabel" ng-bind="myCtrl.resultString"></label>
+        </div>
       </div>
     </div>
   </body>

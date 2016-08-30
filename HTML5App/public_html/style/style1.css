@@ -4,10 +4,7 @@
 h2{
   text-align: center;
 }
-.mz-centerDiv{
-  left: 25%;
-}
-.mz-centerDiv input{
+.mz-inputS1{
   width: 100%;
   text-align: center;
   border-style: solid;
