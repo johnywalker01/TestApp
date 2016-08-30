@@ -14,10 +14,10 @@ h2{
   text-align: center;
 }
 .mz-displaylabel{
+  display: block;
   width: 100%;
   text-align: center;
-  border: 1px solid #fea;
-  border-radius: 3px;
+  border-bottom: 1px solid #fea;
   font-style: italic;
   font-size: 18px;
   font-weight: bolder;

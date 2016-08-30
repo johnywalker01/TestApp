@@ -11,17 +11,17 @@
     <link href="style/generic.css" rel="stylesheet" type="text/css"/>
     <link href="style/style1.css" rel="stylesheet" type="text/css"/>
   </head>
-  <body ng-app="myApp">
+  <body ng-app="myApp" ng-controller="myController as myCtrl">
     <h2>Angular JS Test App</h2>
-    <div class="row" ng-controller="myController as myCtrl">
-      <div class="col-6 mz-centerDiv borderOn">
-        <input class="mz-inputS1" type="text" placeholder="Please enter a text" ng-model="myCtrl.string"/>
+    <div class="row" style="background-color: #ccc;">
+      <div class="col-6 borderOn">
+      <input class="mz-inputS1" type="text" title="Please enter your string" placeholder="Please enter a text" ng-model="myCtrl.string"/>
         <div class="col-12 mz-centerAlign">
           <button ng-click="myCtrl.convertToReverse()">Convert To Reverse</button>
           <button ng-click="myCtrl.convertToAlternateUppercase()">Convert To Alternate Uppercase</button>
           <button ng-click="myCtrl.convertToCamelCase()">Convert To Camelcase</button>
         </div>
-        <div class="col-12 mz-centerAlign">
+        <div class="col-12">
           <label class="mz-displaylabel" ng-bind="myCtrl.resultString"></label>
         </div>
       </div>
