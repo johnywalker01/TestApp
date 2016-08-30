@@ -30,34 +30,6 @@ myApp.controller("myController", function ($scope,$filter) {
     setTimeout("alert('this alert is timedout and should be the first');", 5000);
     alert("this should be the second one");
   };
-  this.test = function (flag) {
-    if (!flag) {
-      this.myTime = setTimeout(function () {alert("flag - "+flag);return "ABC";}, 2500);
-    }
-    // code that you cannot modify
-  };
-
-  this.workerValue;
-  $scope.w;
-  this.startWorker = function () {
-    if (typeof (Worker) !== "undefined") {
-      if (typeof ($scope.w) == "undefined") {
-        $scope.w = new Worker("script/demo_workers.js");
-        $scope.onmessage = function (event) {
-          console.log("value-"+event.data);
-          this.workerValue = event.data;
-        };
-      }
-    } else {
-      this.workerValue = "Sorry, your browser does not support Web Workers...";
-    }
-  };
-
-  this.stopWorker = function () {
-    $scope.w.terminate();
-    $scope.w = undefined;
-  };
-
 });
 
 myApp.filter('reverse', function () {
