@@ -13,9 +13,12 @@
   </head>
   <body ng-app="myApp" ng-controller="myController as myCtrl">
     <h2>Angular JS Test App</h2>
-    <div class="row" style="background-color: #ccc;">
+    <div class="row">
+      <div class="col-3">
+        <!-- Adding blank space on left-->
+      </div>
       <div class="col-6 borderOn">
-      <input class="mz-inputS1" type="text" title="Please enter your string" placeholder="Please enter a text" ng-model="myCtrl.string"/>
+        <input class="mz-inputS1" type="text" title="Please enter your string" placeholder="Please enter a text" ng-model="myCtrl.string"/>
         <div class="col-12 mz-centerAlign">
           <button ng-click="myCtrl.convertToReverse()">Convert To Reverse</button>
           <button ng-click="myCtrl.convertToAlternateUppercase()">Convert To Alternate Uppercase</button>
@@ -24,6 +27,9 @@
         <div class="col-12">
           <label class="mz-displaylabel" ng-bind="myCtrl.resultString"></label>
         </div>
+      </div>
+      <div class="col-3">
+        <!-- Adding blank space on right-->
       </div>
     </div>
   </body>
